@@ -1,5 +1,10 @@
 learn
 simple
 dev
+<<<<<<< Updated upstream
 ehi
 
+=======
+haha
+asdasff
+>>>>>>> Stashed changes
