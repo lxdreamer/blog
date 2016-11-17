@@ -1,4 +1,5 @@
 /* CSS Document */
+*{margin:0}
 nav{background:#ccc;
     height:50px;
 }
@@ -61,3 +62,61 @@ button{
 	line-height:30px;
 	margin:30px;
 	}
+.green-section{
+	
+	background:#0CC;
+	color:#fff;
+	text-align:center;
+	padding:100px 0;
+	}
+h2{
+font-size:30px;	
+}
+.wrapper{
+	max-width:1080px;
+	margin:0 auto;
+	}
+.hr{
+	width:100%;
+	height:2px;
+	margin:20px auto;
+	}
+.green-section .hr{
+	background:#09C;
+	width:60%;
+	}
+.green-section .icon-group .icon{
+	display:inline-block;
+	width:70px;
+	height:70px;
+	background:#39bde8;
+	margin:20px;
+	transform:rotate(45deg);/*旋转*/
+	}
+.gray-section .img-section{
+	width:45%;
+	}
+.gray-section{
+		background:#252F34;
+	}
+.gray-section .text-section{
+	width:55%;
+	position:relative;
+	top:68px;
+	left:50px;
+
+color:#fff;
+
+}
+ .text-section h2{
+	margin-bottom:20px; 
+	 }
+.img-section img{
+	width:100%;
+	}
+.article-preview>div{
+	float:left;
+	}
+.article-preview:after{content:'';
+display:block;
+clear:both;}
