@@ -1,10 +1,19 @@
 /* CSS Document */
 *{margin:0}
+.clearfix:after
+{content:'';
+display:block;
+clear:both;}
 nav{background:#ccc;
     height:50px;
+	position:fixed;
+	width:100%;
 }
+header{
+	background:rgba(0,0,0,0.3);
+	}
 #banner{
-	background:#777;
+    color:#fff;
 	height:700px;
 	}
 nav ul{
@@ -49,7 +58,7 @@ nav .logo{
 	}
 button{
 	border:none;
-	background:#F00;
+	background:#0cc;
 	color:#eee;
 	}
 #banner button{
@@ -58,7 +67,7 @@ button{
 #banner .inner .more{
 	margin-top:280px;
 	}
-#banner .inner .sub-heading{
+.sub-heading{
 	line-height:30px;
 	margin:30px;
 	}
@@ -72,6 +81,10 @@ button{
 h2{
 font-size:30px;	
 }
+h3
+{
+	font-size:24px;
+	}
 .wrapper{
 	max-width:1080px;
 	margin:0 auto;
@@ -120,3 +133,76 @@ color:#fff;
 .article-preview:after{content:'';
 display:block;
 clear:both;}
+.article-preview:nth-child(odd){/*奇数选择器*/
+	background-color:rgba(255,255,255,0.05);
+	}
+.text-section p{
+	font-size:16px;
+	letter-spacing:1px;
+	}
+.text-section >*{
+	max-width:90%;
+	}
+.text-section .sub-heading{
+	font-size:22px;
+	margin-top:0;
+	}
+.purple-section{background:#4d1669;
+color:#fff;
+padding:80px;}
+.purple-section .heading-wrapper{
+	text-align:center;}
+.purple-section .hr{
+	background:#909;
+	width:60%;
+	}
+.card{
+	float:left;
+	width:50%;
+	min-height:300px;
+	padding:50px;
+	box-sizing:border-box;
+}
+.card:first-child{
+	background:rgba(255,255,255,0.04);
+	}
+.card:nth-child(2){
+	background:rgba(255,255,255,0.08);
+	}
+.card:nth-child(3){
+	background:rgba(255,255,255,0.12);
+	}
+.card:last-child{
+	background:rgba(255,255,255,0.16);
+	}
+footer{
+	background:#333;
+	color:#fff;
+	text-align:center;
+	min-height:200px;
+	}
+.share-group{
+	display:block;
+	width:1080px;
+	margin:0 auto;
+	padding:50px;
+	
+	}
+.share-group li
+{
+	display:inline-block;
+	padding:10px;
+	width:20px;
+	height:20px;
+}
+.copy{
+	padding-bottom:20px;
+	}
+.main-warrap
+{
+	background:#444 url(../img/banner.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
